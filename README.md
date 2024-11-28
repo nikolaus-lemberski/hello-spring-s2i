@@ -14,7 +14,7 @@ Simple Spring Boot app to demo OpenShift source-to-image.
 oc new-app openshift/java:openjdk-17-ubi8~https://github.com/nikolaus-lemberski/hello-spring-s2i
 ```
 
-## Make public
+## Make public route
 
 ```bash
 oc expose svc hello-spring-s2i
