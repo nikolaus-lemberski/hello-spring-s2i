@@ -24,5 +24,5 @@ liveness probe
 ## Add healthchecks
 
 ```bash
-oc set probe deployment hello-fastapi --readiness --get-url=http://:8080/actuator/health/readiness --initial-delay-seconds=10 --period=5
-oc set probe deployment hello-fastapi --liveness --get-url=http://:8080/actuator/health/liveness --initial-delay-seconds=10 --period=5```
+oc set probe deployment hello-spring-s2i --readiness --get-url=http://:8080/actuator/health/readiness --initial-delay-seconds=10 --period=5
+oc set probe deployment hello-spring-s2i --liveness --get-url=http://:8080/actuator/health/liveness --initial-delay-seconds=10 --period=5```
