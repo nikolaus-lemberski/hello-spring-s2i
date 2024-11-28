@@ -4,12 +4,9 @@ Simple Spring Boot app to demo OpenShift source-to-image.
 
 ## Endpoints:
 
-* "/"  
-says hello
-* "/actuator/health/readiness"  
-readiness probe
-* "/actuator/health/liveness"  
-liveness probe
+* `/`  -> says hello
+* `/actuator/health/readiness`
+* `/actuator/health/liveness`
 
 ## Build with s2i
 
