@@ -17,7 +17,7 @@ oc new-app openshift/java:openjdk-17-ubi8~https://github.com/nikolaus-lemberski/
 ## Make public route
 
 ```bash
-oc expose svc hello-spring-s2i
+oc create route edge --insecure-policy='Redirect'  --service=hello-spring-s2i
 oc get route
 ```
 
